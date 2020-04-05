@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <style>
+    body {
+        background-color: navy;
+     }
+     p {
+        color: yellow;
+        margin-left: 30px;
+     }
+
+     .answer {
+         font-weight: bold;
+     }
+
+     input[type=text] {
+        padding: 10px 12px;
+        margin: 10px 5px; 
+        border: 4px solid orange;
+    }
+    input[type=submit] {
+        width: 20%;
+        padding: 10px 12px;
+        margin-left: 100px;
+        border: 4px solid orange;
+    }
+    </style>
+  </head>
+  <body>
+    <p>
+    The Caesar cipher is one of the earliest known and simplest ciphers. It is a type of substitution cipher in which each letter in the plaintext is 'shifted' a certain number of places down the alphabet. For example, with a shift of 1, A would be replaced by B, B would become C, and so on.
+    </p>
+    <form>
+       <p> Enter Word: <input type='text' name='word' /></p>
+        <p> Enter Shift: <input type='text' name='shift' /></p>
+        <br>
+        <input type='submit' value='ENTER' />   
+    </form>
+    <br>
+    <p>
+        Word = <%= word%> <br>
+        Shift = <%= shift%><br>
+    </p>
+    <p class = answer> 
+        Caesar Cipher Result: <%= result %>
+    </p>
+
+  </body>
+</html>
